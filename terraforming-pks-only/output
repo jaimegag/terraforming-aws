@@ -1,0 +1,125 @@
+azs = [
+    us-east-1d,
+    us-east-1e,
+    us-east-1f
+]
+dns_zone_id = Z2KBX3W5Y32D83
+iaas = aws
+network_name = vpc-01a062b35b95ebf3e
+pks_api_endpoint = api.pks.pcf-aws.jagapps.co
+pks_api_target_groups = [
+    pcf-aws-pks-tg-9021,
+    pcf-aws-pks-tg-8443
+]
+pks_master_iam_instance_profile_name = pcf-aws_pks-master
+pks_master_security_group_id = sg-0e90a499902caa53a
+pks_services_subnet_availability_zones = [
+    us-east-1d,
+    us-east-1e,
+    us-east-1f
+]
+pks_services_subnet_cidrs = [
+    10.0.24.0/24,
+    10.0.25.0/24,
+    10.0.26.0/24
+]
+pks_services_subnet_gateways = [
+    10.0.24.1,
+    10.0.25.1,
+    10.0.26.1
+]
+pks_services_subnet_ids = [
+    subnet-064672752f9c4b21b,
+    subnet-0d3ad8b0b0508db03,
+    subnet-0c4bb5fd8eb0a684c
+]
+pks_services_subnets = [
+    subnet-064672752f9c4b21b,
+    subnet-0d3ad8b0b0508db03,
+    subnet-0c4bb5fd8eb0a684c
+]
+pks_subnet_availability_zones = [
+    us-east-1d,
+    us-east-1e,
+    us-east-1f
+]
+pks_subnet_cidrs = [
+    10.0.20.0/24,
+    10.0.21.0/24,
+    10.0.22.0/24
+]
+pks_subnet_gateways = [
+    10.0.20.1,
+    10.0.21.1,
+    10.0.22.1
+]
+pks_subnet_ids = [
+    subnet-021894f2b0aac8a88,
+    subnet-0edee02633df54f7d,
+    subnet-0eadc9a835289fa12
+]
+pks_subnets = [
+    subnet-021894f2b0aac8a88,
+    subnet-0edee02633df54f7d,
+    subnet-0eadc9a835289fa12
+]
+pks_worker_iam_instance_profile_name = pcf-aws_pks-worker
+region = us-east-1
+ssl_cert = -----BEGIN CERTIFICATE-----
+MIIEijCCA3KgAwIBAgIJAIzRjErqh2CGMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYD
+VQQGEwJVUzERMA8GA1UECAwITmV3IFlvcmsxETAPBgNVBAcMCE5ldyBZb3JrMRAw
+DgYDVQQKDAdQaXZvdGFsMR4wHAYDVQQLDBVQbGF0Zm9ybSBBcmNoaXRlY3R1cmUx
+GzAZBgNVBAMMEnBjZi1hd3MuamFnYXBwcy5jbzEiMCAGCSqGSIb3DQEJARYTamFn
+dWlsYXJAcGl2b3RhbC5pbzAeFw0xOTAzMDkyMzQxNDBaFw0yOTAzMDYyMzQxNDBa
+MIGmMQswCQYDVQQGEwJVUzERMA8GA1UECAwITmV3IFlvcmsxETAPBgNVBAcMCE5l
+dyBZb3JrMRAwDgYDVQQKDAdQaXZvdGFsMR4wHAYDVQQLDBVQbGF0Zm9ybSBBcmNo
+aXRlY3R1cmUxGzAZBgNVBAMMEnBjZi1hd3MuamFnYXBwcy5jbzEiMCAGCSqGSIb3
+DQEJARYTamFndWlsYXJAcGl2b3RhbC5pbzCCASIwDQYJKoZIhvcNAQEBBQADggEP
+ADCCAQoCggEBANV7Mo50OcCVOD+lvxpSCyAVrDLkkRS8LZRtyJ7zmj1u6HCUWYNW
+LIE9YuwSn85oyiYqUYpBBCzwd5Zkj9o0lYzg67u/IVmbu2Oe04zJcygjesTYfW2s
+RckONgSCz+Ob68v6qbRxlyxiJtX63A5rmXbJX2BNdEydptrc4kSQpo9fJmSQRyW3
+j3vfPrehIGCoLdNu3na9bs+wifjZTra+QqWVua1s0wBk0f4Cv6zpCUuPOH375nB7
+1bOjcyjzufa1cpwDQe1/8zXuYgFn/dKoAac8ukITBuL6Af0rMSQrSJKs9+mX2FNw
+/THhwtr5Y+3ieSTOhM4KJsQUJIlRDOzwsscCAwEAAaOBuDCBtTAJBgNVHRMEAjAA
+MAsGA1UdDwQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwfAYD
+VR0RBHUwc4IYKi5zeXMucGNmLWF3cy5qYWdhcHBzLmNvghkqLmFwcHMucGNmLWF3
+cy5qYWdhcHBzLmNvgh4qLmxvZ2luLnN5cy5wY2YtYXdzLmphZ2FwcHMuY2+CHCou
+dWFhLnN5cy5wY2YtYXdzLmphZ2FwcHMuY28wDQYJKoZIhvcNAQELBQADggEBAB3l
+fBfImkbTt2TwKabYVPqHyWStbz7j2rnSrryfqFPI8A3V2eypyO4Z5+nOyOdQylH9
+PpNRq86wkZDpliUABn5hftlyzfx8caGPgbdDOJ3mdv5DRIayYdC9/MH0ZHAPaLOk
+PiY+HfdHMSeBGqcqKqx7Z2Wlx748AD/cDFw2V5acx9NVi5lBJuKH7MS8RUPuB9WR
+Oyh2KWqjJezCJJyPFc/keTci46NUGmtjKKP6ICmGwBEcabxL+56vmX3xQ4DF1MdE
+i1lGU4ZwXODFyC32MxEJg446+nH1NFjUxsMMcMcRE2yTYZR4QODjGQdvFR3la7nE
+uVhqxOsbHR1FLi5+lFo=
+-----END CERTIFICATE-----
+
+ssl_private_key = -----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDVezKOdDnAlTg/
+pb8aUgsgFawy5JEUvC2Ubcie85o9buhwlFmDViyBPWLsEp/OaMomKlGKQQQs8HeW
+ZI/aNJWM4Ou7vyFZm7tjntOMyXMoI3rE2H1trEXJDjYEgs/jm+vL+qm0cZcsYibV
++twOa5l2yV9gTXRMnaba3OJEkKaPXyZkkEclt4973z63oSBgqC3Tbt52vW7PsIn4
+2U62vkKllbmtbNMAZNH+Ar+s6QlLjzh9++Zwe9Wzo3Mo87n2tXKcA0Htf/M17mIB
+Z/3SqAGnPLpCEwbi+gH9KzEkK0iSrPfpl9hTcP0x4cLa+WPt4nkkzoTOCibEFCSJ
+UQzs8LLHAgMBAAECggEASNeipozt79J6wOzzSi3YcfgzK6JmBqc2/kB/hg0lAfVI
+BrH34SKUSP0DNf4c3TdQUrl53SzWGedrRrvFgfUTWmCczxEmdgb3Z8SX9p/+VSHW
+EDi2g6eWoEXjFKL2AHoBeTZslY90v8Y17imM0LbSRH/ttVR4bHQWrPNVmYOp8Z0s
+S+hGPU/JBB1BW3au28Tc0+qH92QFnqCKBeDUl/NvWx6UzoTyB+vfehhaFSByuZXi
+MIkpacWZ0JP0FNQkXfLNVqe15WMqq0vswoN6h8pKvcWWFk4N4pP89FpFbLqgRYw3
+o9a9irJE422jueoreqpOE8Eq4BS+k7ckUjiGUCLSgQKBgQDvy9tIWt8e/wBuO2md
+bN70tSZ4YH0VwJCywDzfIx/YBIbhTWIUWKX2tR3JM7a7owp+GvupgIg31i5VlwHQ
+eS5NSEqo6ODH+B8+J0D4Go6LvPEMoYNlgVCyfwF3lGshy6fUeQExcQBmg5ofE06Q
+abPY/Wq5SzO0yFOhOk8GUTQgJwKBgQDj6CBr61uD4b85VzGODToGWVbBgvBQmmA9
+WvfapvcxMxy4lTtwLkiPVtEtujcLZZwED6q+uVVF0/VTUid5mLzkDopRkexxNM3h
+T7h39KCElz+FpuytcMBTiqCUmJChf3bq+kfT/v5GEUaqOATiEZE66Dp7wAUlQPJn
+IYbcuVncYQKBgQCP0nnr1Kzb/1+3vaSjyeeTZ47yRhTf1gYzX79iqcNwoY5wVSRN
+RboM1SZPRdgEhE5HwlFMoY2Rx8E0joSFEBloOsKkukAPT88VTR/Xbr4uK5170Odp
+Gv1WgXxUx0zWETrQ4d6IU9lEowvuNXs6fFtk+uFmzybs9/XIzpsVE+EqowKBgQCD
+EIY8qfBKKrPmzO8RqyeYaR5MUPnU0MLR5hOtqeF0aNl2iVPSUrulux62tmVbZ4bO
+ixf9cOXKL3fg/9j1w9G1MWt4N3wLKnvPvCHw0jzRo42DVhi8MaBZKtroOcjLJ1uD
+DIXsM7OVJfBGicq9G68yekTP0ADliLEegBhnrSwxYQKBgHmuteSoQi8br9uKUaL7
+QN6bRMtaNNjAgpLxEupHfMbXD/x/mKmIP+hywIlZySCatzShkpW1k4+xoKlpsEGQ
+rWswfMN21tEJutCxx8bIumQ9DadMfLcAU7A4ePOKUZE0CmUxFKCWC4vwyc4w1C31
+1EUpm3k8wjNt4+G4005zH9Yb
+-----END PRIVATE KEY-----
+
+vpc_id = vpc-01a062b35b95ebf3e
