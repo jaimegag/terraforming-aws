@@ -25,7 +25,7 @@ resource "aws_route_table_association" "route_pks_subnets" {
   route_table_id = "${element(var.private_route_table_ids, count.index)}"
 }
 
-resource "aws_subnet" "services_subnets" {
+resource "aws_subnet" "pks_services_subnets" {
   count             = "${length(var.availability_zones)}"
   vpc_id            = "${var.vpc_id}"
   cidr_block        = "${cidrsubnet(local.pks_services_cidr, 2, count.index)}"
@@ -41,19 +41,19 @@ resource "aws_subnet" "services_subnets" {
   }
 }
 
-data "template_file" "services_subnet_gateways" {
+data "template_file" "pks_services_subnet_gateways" {
   # Render the template once for each availability zone
   count    = "${length(var.availability_zones)}"
   template = "$${gateway}"
 
   vars {
-    gateway = "${cidrhost(element(aws_subnet.services_subnets.*.cidr_block, count.index), 1)}"
+    gateway = "${cidrhost(element(aws_subnet.pks_services_subnets.*.cidr_block, count.index), 1)}"
   }
 }
 
 resource "aws_route_table_association" "route_services_subnets" {
   count          = "${length(var.availability_zones)}"
-  subnet_id      = "${element(aws_subnet.services_subnets.*.id, count.index)}"
+  subnet_id      = "${element(aws_subnet.pks_services_subnets.*.id, count.index)}"
   route_table_id = "${element(var.private_route_table_ids, count.index)}"
 }
 

@@ -25,20 +25,20 @@ output "pks_subnet_cidrs" {
   value = ["${aws_subnet.pks_subnets.*.cidr_block}"]
 }
 
-output "services_subnet_ids" {
-  value = ["${aws_subnet.services_subnets.*.id}"]
+output "pks_services_subnet_ids" {
+  value = ["${aws_subnet.pks_services_subnets.*.id}"]
 }
 
-output "services_subnet_availability_zones" {
-  value = ["${aws_subnet.services_subnets.*.availability_zone}"]
+output "pks_services_subnet_availability_zones" {
+  value = ["${aws_subnet.pks_services_subnets.*.availability_zone}"]
 }
 
-output "services_subnet_gateways" {
-  value = ["${data.template_file.services_subnet_gateways.*.rendered}"]
+output "pks_services_subnet_gateways" {
+  value = ["${data.template_file.pks_services_subnet_gateways.*.rendered}"]
 }
 
-output "services_subnet_cidrs" {
-  value = ["${aws_subnet.services_subnets.*.cidr_block}"]
+output "pks_services_subnet_cidrs" {
+  value = ["${aws_subnet.pks_services_subnets.*.cidr_block}"]
 }
 
 output "pks_master_iam_instance_profile_name" {
