@@ -203,24 +203,24 @@ output "pks_api_lb_security_group_id" {
 
 # PKS Services =================================================================
 
-output "services_subnet_ids" {
-  value = "${module.pks.services_subnet_ids}"
+output "pks_services_subnet_ids" {
+  value = "${module.pks.pks_services_subnet_ids}"
 }
 
-output "services_subnets" {
-  value = "${module.pks.services_subnet_ids}"
+output "pks_services_subnets" {
+  value = "${module.pks.pks_services_subnet_ids}"
 }
 
-output "services_subnet_availability_zones" {
-  value = "${module.pks.services_subnet_availability_zones}"
+output "pks_services_subnet_availability_zones" {
+  value = "${module.pks.pks_services_subnet_availability_zones}"
 }
 
-output "services_subnet_cidrs" {
-  value = "${module.pks.services_subnet_cidrs}"
+output "pks_services_subnet_cidrs" {
+  value = "${module.pks.pks_services_subnet_cidrs}"
 }
 
-output "services_subnet_gateways" {
-  value = "${module.pks.services_subnet_gateways}"
+output "pks_services_subnet_gateways" {
+  value = "${module.pks.pks_services_subnet_gateways}"
 }
 
 output "tags" {
